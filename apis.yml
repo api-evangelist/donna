@@ -1,27 +1,98 @@
 aid: donna
-name: Don.na
-description: Don.na is a company surfaced as a portfolio company of 500-global, point-nine and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: Donna
+description: >-
+  Donna is a voice-first, always-on AI assistant purpose-built for field sales teams, developed by
+  Dealside and sold at askdonna.com. It automates the administrative work that surrounds selling in
+  the field: preparing pre-meeting briefings, capturing and structuring meeting notes for both
+  in-person and virtual calls, drafting follow-up emails and quotes, and writing captured data back
+  into the CRM automatically. Donna integrates with the enterprise systems field reps already use,
+  including Salesforce, HubSpot, Microsoft Dynamics 365, SAP, Outlook, and Google Calendar, and
+  reports outcomes such as a 75% reduction in admin time, a 20% lift in sales conversion, and roughly
+  10x higher CRM adoption. Founded in 2024 by Nicolas Christiaen (CEO), Jonas Deprez (COO), and Xander
+  Berkein (CTO), the company operates from Ghent, London, and New York and is backed by Point Nine,
+  Frontline Ventures, Fortino Capital, Pitchdrive, and others. The platform is ISO 27001-certified and
+  compliant with SOC 2, GDPR, and CCPA, with data encrypted in transit and never used to train AI
+  models. Donna is a SaaS product and does not currently publish a public developer API, SDK, or MCP
+  server surface.
 url: https://raw.githubusercontent.com/api-evangelist/donna/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 - point-nine
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
+x-identity-note: >-
+  The originating VC-portfolio scrape recorded the website as https://incredible.io (the domain hack
+  don.na). That domain belongs to a DIFFERENT, defunct company — Incredible Labs' "Donna" personal
+  assistant, acquired by Yahoo in 2014 and shut down (incredible.io now serves a Yahoo certificate).
+  The Point Nine backing in x-backed-by maps to the ACTIVE field-sales AI company Donna at
+  askdonna.com (legal entity Dealside), which this profile now describes. 500-global backing is
+  unverified and retained only as original scrape provenance.
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- Sales
+- Field Sales
+- CRM
+- Sales Enablement
+- Voice AI
+- Productivity
+- SaaS
+- AI Assistant
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+image: https://cdn.prod.website-files.com/68d14433cd550114f9ff7bf6/69e8bd055906bffcf55795e2_meta-image.png
 common:
 - type: Website
-  url: https://incredible.io
+  url: https://www.askdonna.com
+- type: Blog
+  url: https://www.askdonna.com/blog
+- type: Pricing
+  url: https://www.askdonna.com/pricing
+- type: Login
+  url: https://app.askdonna.com/signin
+- type: TermsOfService
+  url: https://www.askdonna.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.askdonna.com/legal/privacy-policy
+- type: Integrations
+  url: https://www.askdonna.com/integrations
+- type: TrustCenter
+  url: https://trust.askdonna.com
+  name: Donna Trust Center
+- type: Compliance
+  url: https://www.askdonna.com/enterprise-grade-security
+  name: ISO 27001, SOC 2, GDPR, CCPA
+- type: StatusPage
+  url: https://status.askdonna.com
+- type: Conformance
+  url: conformance/donna-conformance.yml
+- type: TrustCenter
+  url: security/donna-trust-center.yml
+  name: Trust center artifact
+- type: DomainSecurity
+  url: security/donna-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
