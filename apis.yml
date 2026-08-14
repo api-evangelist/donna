@@ -13,7 +13,8 @@ description: >-
   Frontline Ventures, Fortino Capital, Pitchdrive, and others. The platform is ISO 27001-certified and
   compliant with SOC 2, GDPR, and CCPA, with data encrypted in transit and never used to train AI
   models. Donna is a SaaS product and does not currently publish a public developer API, SDK, or MCP
-  server surface.
+  server surface; its only machine-readable public artifact is an llms.txt at askdonna.com, which
+  describes the product for AI agents but exposes no callable operations.
 url: https://raw.githubusercontent.com/api-evangelist/donna/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -42,7 +43,7 @@ accessModel:
   method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-14'
 tags:
 - Company
 - Artificial Intelligence
@@ -75,15 +76,30 @@ common:
 - type: PrivacyPolicy
   url: https://www.askdonna.com/legal/privacy-policy
 - type: Integrations
-  url: https://www.askdonna.com/integrations
+  url: https://www.askdonna.com/how-donna-works/crm-integrations
+  name: CRM and integrations
+- type: Support
+  url: https://www.askdonna.com/contact
+- type: GitHubOrganization
+  url: https://github.com/dealside
+  name: Dealside BV (Donna's legal entity)
 - type: TrustCenter
   url: https://trust.askdonna.com
   name: Donna Trust Center
 - type: Compliance
-  url: https://www.askdonna.com/enterprise-grade-security
+  url: https://trust.askdonna.com
   name: ISO 27001, SOC 2, GDPR, CCPA
 - type: StatusPage
   url: https://status.askdonna.com
+- type: LLMsTxt
+  url: llms/donna-llms.txt
+  name: Provider-published llms.txt (verbatim)
+- type: Lifecycle
+  url: lifecycle/donna-lifecycle.yml
+- type: Plans
+  url: plans/donna-plans-pricing.yml
+- type: Packages
+  url: packages/donna-packages.yml
 - type: Conformance
   url: conformance/donna-conformance.yml
 - type: TrustCenter
@@ -92,7 +108,27 @@ common:
 - type: DomainSecurity
   url: security/donna-domain-security.yml
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-14'
+  status: minimal
+  artifacts_added: 6
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Donna ships only as an end-user SaaS product — full STEP 0b contract discovery across
+    www/apex/app/docs hosts found no OpenAPI, no GraphQL, no MCP endpoint and no agent card, the
+    marketing site has no /api, /docs or /developers route, and the company's own status page tracks
+    four end-user surfaces (web app, mobile app, voice calling, notetaker) with no API component.
+  evidence:
+  - url: https://www.askdonna.com/developers
+    status: 404
+  - url: https://www.askdonna.com/openapi.json
+    status: 404
+  - url: https://www.askdonna.com/.well-known/agent-card.json
+    status: 404
+  - url: https://docs.askdonna.com/openapi.json
+    status: 522
+  - url: https://www.askdonna.com/llms.txt
+    status: 200
+  checked: '2026-08-14'
