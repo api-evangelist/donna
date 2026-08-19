@@ -1,0 +1,51 @@
+generated: '2026-08-14'
+method: probed
+source: https://status.askdonna.com/api/v2/summary.json
+note: >-
+  Donna publishes an operational status page but no API lifecycle policy. Versioning, deprecation
+  and Sunset/Deprecation header (RFC 8594) support are all absent because there is no public API
+  contract to version or deprecate — contract discovery found no OpenAPI, GraphQL or MCP surface on
+  any host. A `StatusPage` pointer is warranted (the page is real, first-party and machine-readable);
+  a `Deprecation` pointer is NOT, and is deliberately withheld.
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: no public API contract, therefore no published versioning scheme
+deprecation:
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  note: no deprecation policy published
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No public SLA or uptime target. The status page reports live component state but publishes no
+    uptime commitment.
+status_page: https://status.askdonna.com
+status_page_platform: Atlassian Statuspage
+status_page_api: https://status.askdonna.com/api/v2/summary.json
+status_page_machine_readable: true
+components:
+- {name: Donna Web App, status: operational, description: app.askdonna.com}
+- {name: Donna Mobile Application, status: operational}
+- {name: Donna Voice Calling, status: operational}
+- {name: Donna Notetaker, status: operational, description: Donna online meeting notetaker}
+observed:
+  overall: All Systems Operational
+  indicator: none
+  open_incidents: 0
+  scheduled_maintenances: 0
+  page_time_zone: Europe/Brussels
+  observed_at: '2026-08-14'
+  note: >-
+    No API component is listed among the four tracked components — the status page tracks end-user
+    product surfaces (web app, mobile app, voice calling, notetaker) only. This corroborates the
+    finding that Donna ships no developer-facing API.
+deprecated_operations: []
+changelog: null
+evidence:
+- {url: https://status.askdonna.com/, status: 200}
+- {url: https://status.askdonna.com/api/v2/summary.json, status: 200, content_type: application/json}
+- {url: https://www.askdonna.com/changelog, status: 404, finding: no changelog published}

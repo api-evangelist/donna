@@ -1,0 +1,39 @@
+generated: '2026-08-14'
+method: probed
+source: live GET of /.well-known/* on every host in apis.yml
+note: >-
+  Every /.well-known/ path probed returned 404 on every Donna host. NO WellKnown or SecurityTxt
+  pointer is emitted in apis.yml, because a pointer asserts the provider SERVES that surface and
+  this file records the opposite. The marketing site (Webflow) answers every /.well-known/* request
+  with a short "Invalid .well-known request" HTML body under a 404 status; the application host
+  (app.askdonna.com, Next.js) answers with its own 404 page. Both are honest 404s, not soft-200
+  SPA catch-alls, so no path was mistaken for a document.
+hosts:
+- host: https://www.askdonna.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://askdonna.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://app.askdonna.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+summary:
+  paths_probed: 21
+  documents_found: 0
+  security_txt: false
+  agent_card: false
+  oauth_metadata: false

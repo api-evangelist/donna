@@ -1,0 +1,62 @@
+# Donna
+
+> Donna is the only AI assistant built for field sales teams. She prepares reps for meetings, takes notes online or in person, auto-updates the CRM, drafts follow-ups, and gives managers full visibility into the field. Built by Dealside BV. Trusted by 100+ organizations and rated 4.9/5 on G2.
+
+Donna works conversationally (voice, text, or call), is hands-free for reps on the go, and integrates with Salesforce, SAP, Microsoft Dynamics 365, HubSpot, Outlook, and Google Calendar, including custom CRM objects and fields. Customers typically report about 75% less admin time, up to 10x higher CRM adoption, and roughly 20% higher sales conversion. Donna is ISO 27001 certified and fully compliant with GDPR, CCPA, and SOC 2. Data is encrypted in transit and never used to train AI models. Most teams are fully onboarded in under two weeks.
+
+## Product
+
+- [Homepage](https://www.askdonna.com): Overview of Donna for field sales, headline outcomes, and integrations.
+- [How Donna works](https://www.askdonna.com/how-donna-works): Full walkthrough of the product across five capability areas.
+- [Conversation based](https://www.askdonna.com/how-donna-works/conversation-based): Voice, text, or call. Donna proactively guides reps through the day with meeting prep and account context.
+- [CRM and integrations](https://www.askdonna.com/how-donna-works/crm-integrations): Auto-logs meetings, creates contacts and opportunities, prepares quotes, and drafts follow-up emails.
+- [Note taking](https://www.askdonna.com/how-donna-works/note-taking): Captures every detail from online and in-person meetings. Structured notes are ready instantly.
+- [Reporting insights](https://www.askdonna.com/how-donna-works/reporting-insights): Reliable CRM data, clean dashboards, and field insights for sales leaders.
+- [Coaching and training](https://www.askdonna.com/how-donna-works/coaching-training): Real-time guidance and playbook-driven coaching pulled from your knowledge base.
+- [Integrations](https://www.askdonna.com/integrations): Salesforce, SAP, Microsoft Dynamics 365, HubSpot, Outlook, Google Calendar, and more, including custom objects.
+- [Donna and SAP](https://www.askdonna.com/donna-and-sap): Dedicated detail page on the SAP integration.
+- [Enterprise-grade security](https://www.askdonna.com/enterprise-grade-security): ISO 27001, SOC 2, GDPR, and CCPA compliance.
+
+## Use cases by industry
+
+- [Industries overview](https://www.askdonna.com/industries): How Donna supports field sales across regulated and high-volume industries.
+- [Consumer Packaged Goods](https://www.askdonna.com/industry/consumer-packaged-goods): Helps CPG reps stay ahead of their day, capture visit data, and grow accounts.
+- [Healthcare and life sciences](https://www.askdonna.com/industry/healthcare-life-science): Automate compliance tracking and improve rep productivity.
+- [Insurance](https://www.askdonna.com/industry/insurance): Free agents and producers from admin so they focus on brokers and clients.
+- [Real Estate](https://www.askdonna.com/industry/real-estate): Automate site-visit capture and improve CRM data quality (e.g., ERA Belgium reported a 5x increase in data quality).
+- [Manufacturing](https://www.askdonna.com/industry/manufacturing): Capture dealer and account-manager conversations to accelerate growth.
+- [Medical devices](https://www.askdonna.com/industry/medical-devices): Enhance device sales performance and field reporting.
+- [Wealth Management](https://www.askdonna.com/industry/wealth-management): Give brokers and advisors more time for client relationships.
+
+## Pricing
+
+- [Pricing](https://www.askdonna.com/pricing): Seat-based model for predictable budgeting. Includes real-time conversational AI assistant, hands-free multimodal access (call, voice notes, chat), CRM integration, online/offline/in-person recording, real-time market analytics, proactive nudges and coaching, and Single Sign-On. Pricing is provided on request.
+- [Request pricing](https://www.askdonna.com/contact): Contact the Donna team for a quote.
+- [Book a demo](https://www.askdonna.com/book-a-demo): Schedule a guided walkthrough.
+- [Try Donna](https://www.askdonna.com/contact-talk): Talk to Donna directly to experience the product.
+
+## Customer proof and resources
+
+- [Testimonials and case studies](https://www.askdonna.com/testimonials): Stories from Liantis, ERA Belgium, DPG Media, Luminus, Stanley/Stella, Boss Paints, Santens, Bonana, Indie Group, and more.
+- [Blog](https://www.askdonna.com/blog): Insights for field sales teams.
+- [Downloads](https://www.askdonna.com/resources): Guides and tools, including "Maximize Sales Efficiency and Drive Stronger CRM Adoption on the Go".
+- [FAQ](https://www.askdonna.com/faq): Setup time, security, CRM customization, and how Donna differs from generic AI sales tools.
+- [G2 reviews](https://www.g2.com/products/donna-donna/reviews): 4.9/5 on G2.
+
+## Optional
+
+- [Company](https://www.askdonna.com/company): About Donna by Dealside BV, team, and partners (PwC, Deloitte, Plaud, Orion).
+- [Careers](https://careers.askdonna.com): Open roles at Donna.
+- [Trust center](https://trust.askdonna.com): Security and compliance documentation.
+- [System status](https://status.askdonna.com): Live status of Donna services.
+- [LinkedIn](https://www.linkedin.com/company/donna-by-dealside): Company updates.
+- [YouTube](https://www.youtube.com/@askdonna): Product demos and customer videos.
+- [Salesforce AppExchange listing](https://appexchange.salesforce.com/appxListingDetail?listingId=a0NHu00000oz8emMAA)
+- [Microsoft AppSource listing](https://marketplace.microsoft.com/en-us/product/saas/askdonna.donna_by_dealside)
+- [SAP Store listing](https://www.sap.com/products/crm/partners/dealside-donna-the-proactive-ai-assistant.html)
+- [HubSpot App Marketplace listing](https://ecosystem.hubspot.com/marketplace/apps/sales/sales-enablement/donna)
+- [Privacy Policy](https://www.askdonna.com/legal/privacy-policy)
+- [Terms](https://www.askdonna.com/legal/terms)
+- [Data Processing Addendum](https://www.askdonna.com/legal/data-processing-addendum)
+- [Cookie Policy](https://www.askdonna.com/legal/cookie-policy)
+- Contact: info@askdonna.com

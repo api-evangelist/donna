@@ -1,0 +1,21 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.askdonna.com/llms.txt
+note: >-
+  No rate limits are published because there is no public API to limit. Contract discovery found no
+  OpenAPI, GraphQL, MCP or webhook surface on any Donna host, and no developer portal or API
+  reference exists (/api, /docs, /developers all 404). There is therefore no documented quota, no
+  window, and no runtime rate-limit response header an agent could read. This is an honest zero, not
+  an unchecked field. NO `RateLimits` pointer is emitted in apis.yml: the agent-readiness
+  rate_limit_signal dimension credits the pointer's presence, so wiring one here would score a file
+  that documents an ABSENCE as if it documented a published limit.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
+retry_after: false
+evidence:
+- {url: https://www.askdonna.com/api, status: 404}
+- {url: https://www.askdonna.com/developers, status: 404}
+- {url: https://www.askdonna.com/docs, status: 404}
+- {url: https://www.askdonna.com/openapi.json, status: 404}

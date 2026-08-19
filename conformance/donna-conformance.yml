@@ -1,6 +1,17 @@
 generated: '2026-07-18'
 method: searched
 source: https://askdonna.com/enterprise-grade-security
+x-recheck:
+  date: '2026-08-14'
+  finding: >-
+    Source page now 301s to the homepage (retired in the 2026-08-03 site rebuild), but every
+    standard asserted below is restated verbatim in the provider's current llms.txt, so no entry
+    changes. Re-confirmed that no API standards are derivable: STEP 0b contract discovery across
+    www/apex/app/docs hosts found no OpenAPI, GraphQL, MCP or agent-card surface.
+  restated_at: https://www.askdonna.com/llms.txt
+  evidence:
+  - {url: https://www.askdonna.com/enterprise-grade-security, status: 301}
+  - {url: https://www.askdonna.com/llms.txt, status: 200}
 note: >-
   Donna (Dealside) publishes no OpenAPI or public developer API, so cross-cutting API standards
   (oauth2, oidc, rfc9457, json:api, pagination, idempotency) cannot be derived from a spec. The

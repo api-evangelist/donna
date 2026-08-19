@@ -1,0 +1,39 @@
+generated: '2026-08-14'
+method: searched
+source: https://www.askdonna.com/pricing
+note: >-
+  Donna publishes NO priced tiers. The pricing page describes a single seat-based commercial model
+  and its included capabilities, then routes every visitor to a contact form ("Request pricing"),
+  a demo booking, or a live product trial. No price, currency, billing period, quota or overage is
+  stated anywhere on the public site, and there is no self-serve checkout — consistent with
+  apis.yml accessModel (onboarding: approval, public: false).
+plan_count: 0
+pricing_model: seat-based
+currency: null
+public_pricing: false
+self_serve_checkout: false
+contact_required: true
+tiers: []
+model:
+  name: Seat-based
+  price: on-request
+  billing_period: null
+  description: >-
+    "Seat-based model for predictable budgeting" — the only commercial mechanic the provider states
+    publicly. Verbatim from the pricing page and repeated in the provider's own llms.txt.
+  included:
+  - Real-time conversational AI assistant
+  - Hands-free multimodal access (call, voice notes, chat)
+  - CRM integration
+  - Online, offline and in-person recording
+  - Real-time market analytics
+  - Proactive nudges and coaching
+  - Single Sign-On
+  source: https://www.askdonna.com/pricing
+quote_paths:
+- {label: Request pricing, url: https://www.askdonna.com/contact, status: 200}
+- {label: Book a demo, url: https://www.askdonna.com/book-a-demo}
+- {label: Try Donna, url: https://www.askdonna.com/contact-talk}
+evidence:
+- {url: https://www.askdonna.com/pricing, status: 200, finding: no priced tier published; contact-for-quote only}
+- {url: https://www.askdonna.com/llms.txt, status: 200, finding: provider's own llms.txt states "Pricing is provided on request"}

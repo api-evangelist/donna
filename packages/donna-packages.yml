@@ -1,0 +1,63 @@
+generated: '2026-08-14'
+method: searched
+source: >-
+  Registry metadata endpoints (registry.npmjs.org, pypi.org/pypi/*/json) plus the Dealside GitHub
+  organization (https://github.com/dealside) and the provider's own llms.txt link set.
+note: >-
+  Donna (Dealside BV) publishes NO first-party client library in any public package registry. The
+  provider ships no public API, so there is nothing for an SDK to wrap. No `SDKs` pointer is emitted
+  in apis.yml — the sdk_count checks must not fire on an empty set.
+packages: []
+official_package_count: 0
+rejected_namesakes:
+- registry: npm
+  name: donna
+  url: https://www.npmjs.com/package/donna
+  version: 1.0.16
+  published: null
+  official: false
+  reason: >-
+    NOT this company. This is Atom's CoffeeScript documentation generator (repository
+    git://github.com/atom/donna, maintainers benogle/nathansobo/atom-team). Name collision only.
+- registry: pypi
+  name: donna
+  url: https://pypi.org/project/donna/
+  version: 0.4.1
+  published: null
+  official: false
+  reason: >-
+    NOT this company. "Deterministic behavior, state machines, artifact management, and meta
+    programming for your coding agent" by Tiendil (https://github.com/Tiendil/donna). Name
+    collision only.
+- registry: github
+  name: donna-ai
+  url: https://github.com/Donna-ai
+  version: null
+  published: null
+  official: false
+  reason: >-
+    NOT this company. Org describes itself as "Best (virtual) secretary of the century! Donna =
+    Virtual Assistant + Internet of Things" — an unrelated project.
+registries_probed:
+- {registry: npm, names: [donna, askdonna, dealside, "@askdonna/sdk", "@dealside/sdk"], first_party_hits: 0}
+- {registry: pypi, names: [donna, askdonna, dealside], first_party_hits: 0}
+first_party_repositories:
+- name: dealside/donna-realtime-api-frontend
+  url: https://github.com/dealside/donna-realtime-api-frontend
+  language: TypeScript
+  description: Realtime frontend for interviews
+  last_pushed: '2025-06-02'
+  distributed: false
+  note: >-
+    First-party (Dealside BV is Donna's legal entity) but NOT a package. Unpublished Vite/React
+    application scaffold with a stock template README; no spec, no registry artifact, no consumer
+    surface. Catalogued here so a later round does not re-mistake the "api" in its name for an SDK.
+- name: dealside/donna-api-mobile
+  url: https://github.com/dealside/donna-api-mobile
+  language: JavaScript
+  description: pnpm workspace with an Expo frontend and a Hono backend
+  last_pushed: '2025-10-08'
+  distributed: false
+  note: >-
+    First-party but NOT a package and NOT a public API. Internal mobile app workspace; no published
+    contract, no registry artifact.

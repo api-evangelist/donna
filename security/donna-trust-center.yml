@@ -22,3 +22,22 @@ notes: >-
   Certification claims captured verbatim from the provider's public security page. No responsible
   disclosure / bug bounty program is published, and no /.well-known/security.txt was served
   (HTTP 404), so no VulnerabilityDisclosure artifact is emitted.
+x-recheck:
+  date: '2026-08-14'
+  finding: >-
+    The cited source page https://www.askdonna.com/enterprise-grade-security now returns HTTP 301 to
+    the site homepage — it was retired in the 2026-08-03 site rebuild, and the provider's own
+    llms.txt still advertises the dead URL. The certification claims themselves are UNCHANGED and
+    still first-party: the same ISO 27001 / SOC 2 / GDPR / CCPA text is restated verbatim in the
+    current llms.txt (llms/donna-llms.txt), and trust.askdonna.com remains live. The apis.yml
+    Compliance pointer was repointed from the retired page to the live trust center.
+  evidence:
+  - {url: https://www.askdonna.com/enterprise-grade-security, status: 301, location: https://www.askdonna.com/}
+  - {url: https://trust.askdonna.com/, status: 200}
+  - {url: https://www.askdonna.com/llms.txt, status: 200}
+  trust_center_machine_readable: false
+  trust_center_note: >-
+    trust.askdonna.com is a Vanta-hosted single-page app that answers 200 with the same 4.6KB HTML
+    shell for EVERY path (including /robots.txt and /sitemap.xml). Certification detail exists only
+    after script execution; api.vanta.com public trust-report endpoints return 401. Nothing
+    machine-readable can be harvested from it.
