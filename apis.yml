@@ -30,6 +30,17 @@ x-identity-note: >-
   The Point Nine backing in x-backed-by maps to the ACTIVE field-sales AI company Donna at
   askdonna.com (legal entity Dealside), which this profile now describes. 500-global backing is
   unverified and retained only as original scrape provenance.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
