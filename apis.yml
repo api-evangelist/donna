@@ -85,6 +85,8 @@ maintainers:
   email: info@apis.io
 image: https://cdn.prod.website-files.com/68d14433cd550114f9ff7bf6/69e8bd055906bffcf55795e2_meta-image.png
 common:
+- type: RateLimits
+  url: rate-limits/donna-rate-limits.yml
 - type: Website
   url: https://www.askdonna.com
 - type: Blog
