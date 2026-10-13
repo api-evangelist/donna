@@ -1,16 +1,32 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/donna/integrations
 - https://n8n.io/integrations/donna/
 - https://composio.dev/toolkits/donna
 - https://monid.ai/tools/donna
 checked:
+- https://azuremarketplace.microsoft.com/
 - https://composio.dev/toolkits/donna
 - https://monid.ai/tools/donna
 - https://n8n.io/integrations/donna/
 - https://zapier.com/apps/donna/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Donna
+  listing_count: 1
+  apps:
+  - Donna | The Perfect Assistant for Sales Reps On The Go
+  seller_name: Donna
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 templates: []
