@@ -11,6 +11,7 @@ checked:
 - https://monid.ai/tools/donna
 - https://n8n.io/integrations/donna/
 - https://zapier.com/apps/donna/integrations
+- zoom/integrations/zoom-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -29,4 +30,21 @@ edges:
   seller_name: Donna
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: Zoom (own)
+  partner: zoom
+  partner_match: mirror
+  mirror_match: domain+product
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.zoom.us/apps/1YeKLmb4SDmYT_HZRMmTug
+  mirror_of: zoom/integrations/zoom-integration-edges.yml
+  apps:
+  - Donna
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Zoom app
 templates: []
